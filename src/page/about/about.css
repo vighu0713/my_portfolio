@@ -1,0 +1,110 @@
+.about{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+min-height: 90vh;
+}
+.aboutWrapper{
+    font-family: var(--font1);
+    padding: 20px 0;    
+}
+.aboutTitle{
+    margin-bottom: 50px;
+}
+.aboutTitle .Title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+}
+.aboutTitle .Title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    left: 43%;
+}
+.aboutTitle .Title::after{
+    content: "who i am";
+    position: absolute;
+    background:rgb(214, 177, 210);;
+    left: 46%;
+    color: crimson;
+    font-size: 20px;
+    bottom: -12px;
+    padding: 5px;
+}
+.aboutRight{
+    flex-basis: 40%;
+    justify-content: center;
+}
+.aboutRightImg{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: -3px 3px 12px 7px rgba(26, 2, 2, 0.69);
+
+}
+.aboutInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutLeft{
+    flex-basis: 53%;
+    font-size: 20px;
+    font-family: var(--font1);
+    font-weight: 500;
+}
+.aboutLeft .info{
+    line-height: 30px;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 23px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: crimson;
+    border: 3px solid crimson;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: none;
+    color: black;
+}
+
+/* -------------------------responsive-------------------------------- */
+
+@media screen and (max-width:1160px) {
+    .aboutInfo{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .aboutLeft{
+        flex-basis: 100%;
+    }
+    .aboutRight{
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:480px){
+    .aboutRightImg{
+        width: 300px;
+        height: 300px;
+    }
+    .aboutTitle .Title::before{   
+        left: 23%;
+    }
+    .aboutTitle .Title::after{
+        left: 34%;    
+        background:rgb(173, 183, 225);
+    }
+}

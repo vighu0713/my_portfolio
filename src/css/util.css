@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+:root{
+   --font1:'ubuntu';
+   --font2:'san-serif';
+}
+.font1{
+   --font1: sans-serif;
+    
+}
+.font2{
+   --font2:'ubuntu';
+
+}
+.max-width{
+    max-width: 80vw;
+ 
+}
+.m-auto{
+    margin: auto;
+}

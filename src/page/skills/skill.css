@@ -1,0 +1,272 @@
+.skill{
+    height: 83vh;
+    position: relative;
+}
+/* .skill::after{
+content: "";
+background: rgba(0, 47, 255, 0.7) url('../../Images/skill.png');
+background-blend-mode: darken;
+background-repeat: no-repeat;
+background-size: cover;
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0.35;
+z-index: -1;
+top: 0;
+} */
+.skillWrapper{
+    font-family: var(--font1);
+    padding: 20px 0;
+    height: 100%;
+}
+.skillTitle{
+    padding-bottom: 25px;
+}
+.skillTitle .title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 20px;
+}
+.skillTitle .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background-color: black;
+    bottom: 0;
+    left: 43%;
+}
+.skillTitle .title::after{
+    content: "what i know";
+    position: absolute;
+    background: white;
+    left: 46%;
+    color: crimson;
+    font-size: 20px;
+    bottom: -12px;
+    padding: 5px;
+}
+.skillSet{
+    justify-content: space-around;
+    height: 100%;
+}
+.skillLeft{
+    flex-basis: 60%;
+    justify-content: space-around;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+.skillCard{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.skillRight{
+    flex-basis: 30%;
+    flex-direction: column;
+}
+.skillRightImg{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.skillInfo{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+line-height: 30px;
+text-align: center;
+}
+.skillName{
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+/* -------------------------animation skill----------------------------- */
+
+.progress{
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: -3px 3px 12px 7px rgba(26, 2, 2, 0.69);
+
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px  -1px rgba(255, 255, 255, 0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05)
+}
+.HTML{
+    color: #555;
+    font-weight: 600;
+}
+
+.html{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim1 2s linear  forwards  ;
+}
+.css{
+
+        fill: none;
+        stroke-width: 20px;
+        stroke: url(#GradientColor);
+        stroke-dasharray: 472;
+        stroke-dashoffset: 472;
+        animation: anim2 2s linear  forwards  ;  
+}
+.js{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear  forwards  ;
+}
+.react{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim4 2s linear  forwards  ;
+}
+.c{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim5 2s linear  forwards  ;
+}
+.python{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim6 2s linear  forwards  ;
+}
+.java{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim7 2s linear  forwards  ;
+}
+.mysql{
+    fill: none;
+    stroke-width: 20px;
+    stroke: url(#GradientColor);
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim8 2s linear  forwards  ;
+}
+svg{
+    position: absolute;
+
+}
+@keyframes anim1 {
+    100%{
+        stroke-dashoffset: 71;
+    }
+}
+@keyframes anim2 {
+    100%{
+        stroke-dashoffset: 95;
+    }
+}
+@keyframes anim3 {
+    100%{
+        stroke-dashoffset: 189;
+    }
+}
+@keyframes anim4 {
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+@keyframes anim5 {
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+@keyframes anim6 {
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+@keyframes anim7 {
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+@keyframes anim8 {
+    100%{
+        stroke-dashoffset: 142;
+    }
+}
+
+
+/* ------------------------------responsive-------------------- */
+
+@media screen and (max-width:1150px){
+    .skill{
+        height: auto;
+    }
+    .skillSet{
+        flex-direction: column-reverse;
+    }
+    .skillRight{
+        flex-basis: 100%;
+        flex-direction: column-reverse;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .skillLeft{
+        flex-basis: 100%;
+        
+    }
+    .skillName{
+        margin-top: 20px;
+    }
+    .skillCard{
+        margin-bottom: 40px;
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    .aboutRightImg{
+        width: 300px;
+        height: 300px;
+    }
+    .skillTitle .title::before{   
+        left: 23%;
+    }
+    .skillTitle .title::after{
+        left: 34%;    
+    }
+}
